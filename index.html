@@ -1,87 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pistol Pete's Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS CDN -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"> <!-- Custom Font -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pistol Pete | Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { backdrop-filter: blur(10px) brightness(1.1); background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); }
+        .hover-effect:hover { transform: scale(1.05); }
+    </style>
 </head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <!-- Header Section -->
+    <header class="py-6 px-8 bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-400">Pistol Pete</h1>
+            <nav class="space-x-6">
+                <a href="#about" class="text-gray-300 hover:text-indigo-400 transition">About</a>
+                <a href="#projects" class="text-gray-300 hover:text-indigo-400 transition">Projects</a>
+                <a href="#timeline" class="text-gray-300 hover:text-indigo-400 transition">Journey</a>
+                <a href="#contact" class="text-gray-300 hover:text-indigo-400 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Hero Section -->
+    <section class="relative py-20 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-bold text-indigo-400">Innovative Solutions, Creative Coding</h2>
+            <p class="mt-4 text-lg text-gray-300">Hi, I’m Pete. Let’s build something amazing together.</p>
+            <a href="#projects" class="mt-8 inline-block bg-indigo-600 text-white px-8 py-4 rounded-lg text-lg hover:bg-indigo-700 transition">Explore My Work</a>
+        </div>
+        <div class="absolute top-10 right-10 h-32 w-32 bg-indigo-600 rounded-full opacity-30 blur-2xl"></div>
+    </section>
 
-  <!-- Header Section -->
-  <header class="bg-white shadow-lg">
-    <div class="max-w-7xl mx-auto px-6 py-12">
-      <h1 class="text-5xl font-extrabold text-center text-gray-900">Pistol Pete's Portfolio</h1>
-      <nav class="mt-8 text-center">
-        <a href="#about" class="mx-6 text-lg text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
-        <a href="#projects" class="mx-6 text-lg text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a>
-        <a href="#contact" class="mx-6 text-lg text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Main Section -->
-  <main class="max-w-7xl mx-auto px-6 py-16">
-    
     <!-- About Section -->
-    <section id="about" class="text-center">
-      <h2 class="text-3xl font-semibold text-indigo-700">Hi, I'm Pete!</h2>
-      <p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
-        I’m a software developer specializing in front-end technologies like <strong class="font-bold">Next.js</strong>, <strong class="font-bold">React</strong>, and <strong class="font-bold">JavaScript</strong>.
-        With a background in both software development and data management, I build responsive and intuitive web applications. Let's collaborate!
-      </p>
+    <section id="about" class="py-16 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-indigo-400">About Me</h2>
+            <p class="mt-6 text-lg text-gray-300">From professional hockey to software development, I’ve honed discipline, teamwork, and problem-solving skills. I’m passionate about crafting intuitive user experiences with technologies like <strong>Next.js</strong>, <strong>React</strong>, and <strong>TailwindCSS</strong>.</p>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="mt-20">
-      <h2 class="text-3xl font-semibold text-center text-indigo-700">My Projects</h2>
-      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-        <!-- Project 1 -->
-        <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition duration-300">
-          <h3 class="text-xl font-semibold text-indigo-700">Project 1</h3>
-          <p class="mt-4 text-gray-600">Description of Project 1 with highlights of the technologies and outcome.</p>
+    <section id="projects" class="py-16 px-6 bg-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-indigo-400 text-center">Projects</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Cards -->
+                <div class="glass p-6 rounded-lg hover-effect transition">
+                    <h3 class="text-2xl font-bold text-indigo-300">Project 1: Dispatch App</h3>
+                    <p class="mt-4 text-gray-300">Created a Next.js app that helps managers assign jobs to their lot techs</p>
+                </div>
+                <a href="https://thesedayswithdevon.com">
+                    <div class="glass p-6 rounded-lg hover-effect transition">
+                        <h3 class="text-2xl font-bold text-indigo-300">Project 2: Blog Designer</h3>
+                        <p class="mt-4 text-gray-300">Developed and manage a responsive Squarespace blog for consistent monthly updates.</p>
+                    </div>
+                </a>
+                <div class="glass p-6 rounded-lg hover-effect transition">
+                    <h3 class="text-2xl font-bold text-indigo-300">Project 3: Dealership Website Badges</h3>
+                    <p class="mt-4 text-gray-300">Built badges that integrate with dealership websites to help them sell used cars</p>
+                </div>
+            </div>
         </div>
-        <!-- Project 2 -->
-        <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition duration-300">
-          <h3 class="text-xl font-semibold text-indigo-700">Project 2</h3>
-          <p class="mt-4 text-gray-600">Description of Project 2 with highlights of the technologies and outcome.</p>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="py-16 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-indigo-400">My Journey</h2>
+            <div class="mt-12 space-y-10">
+                <div class="glass p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold">Professional Hockey Player</h3>
+                    <p class="text-gray-300">2017-2021 | Back-to-back championships, using teamwork .</p>
+                </div>
+                <div class="glass p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold">Software Developer</h3>
+                    <p class="text-gray-300">2021-Present | From DataOne to Dealer Specialties, delivering elegant technical solutions.</p>
+                </div>
+            </div>
         </div>
-        <!-- Project 3 -->
-        <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition duration-300">
-          <h3 class="text-xl font-semibold text-indigo-700">Project 3</h3>
-          <p class="mt-4 text-gray-600">Description of Project 3 with highlights of the technologies and outcome.</p>
-        </div>
-      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="mt-20 text-center">
-      <h2 class="text-3xl font-semibold text-indigo-700">Contact Me</h2>
-      <p class="mt-6 text-xl text-gray-600">Feel free to reach out via email or connect with me on LinkedIn. Let’s discuss your next project!</p>
-      <div class="mt-8">
-        <div class="col mb-8">
-            <a href="https://www.linkedin.com/in/peter-sikalis-pistolpete/" class="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg hover:bg-indigo-700 transition duration-300">
-                LinkedIn
-              </a>
+    <section id="contact" class="py-16 text-center bg-gray-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-indigo-400">Let’s Connect</h2>
+            <p class="mt-4 text-lg text-gray-300">I’m always excited to discuss new opportunities or projects. Reach out anytime!</p>
+            <div class="mt-8 space-x-6">
+                <a href="https://www.linkedin.com/in/peter-sikalis-pistolpete/" class="bg-indigo-600 text-white px-8 py-4 rounded-lg text-lg hover:bg-indigo-700 transition">LinkedIn</a>
+                <a href="mailto:psikalis16@gmail.com" class="bg-indigo-600 text-white px-8 py-4 rounded-lg text-lg hover:bg-indigo-700 transition">Email Me</a>
+            </div>
         </div>
-        <div class="col">
-            <a href="mailto:psikalis16@gmail.com" class="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg hover:bg-indigo-700 transition duration-300">
-                Email Me
-            </a>
-        </div>
-      </div>
     </section>
 
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-6 mt-20">
-    <p class="text-lg">&copy; 2024 Pistol Pete. All rights reserved.</p>
-  </footer>
-
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 text-center">
+        <p class="text-gray-500">&copy; 2025 Pistol Pete. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
